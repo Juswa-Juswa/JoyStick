@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function logout() {
     alert('Logging Out... Press Ok to Continue.');
     setTimeout(() => {
-        window.location.href = 'JoyStick_LoginRegister.html';
+        window.location.href = 'index.html';
     }, 1000);
 };
 
