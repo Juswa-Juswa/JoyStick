@@ -1,0 +1,124 @@
+body {
+  font-family: 'valorant';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(assets/bg1.jpg);
+  height: 100vh;
+  margin: 0;
+}
+
+@font-face { font-family: valorant; src: url('assets/ValorantFont.ttf'); } 
+
+.login_display {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  background-color: #ccc;
+  width: 35vh;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 50px;
+  text-align: center;
+}
+
+span {
+  color: red;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+label {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: 1px solid black;
+  background: #cccccc7c;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input[type="password"] {
+  padding-right: 30px;
+}
+
+.password-input button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+button.login {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.login:hover {
+  background-color: #45a049;
+}
+
+button.show-password {
+  background-color: #3498db;
+  color: white;
+  margin-top: 10px;
+}
+
+button.show-password:hover {
+  background-color: #2980b9;
+}

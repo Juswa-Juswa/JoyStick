@@ -1,0 +1,326 @@
+@font-face { font-family: valorant; src: url('assets/ValorantFont.ttf'); } 
+
+* {
+  text-decoration: none;
+  z-index: 1;
+}
+
+/*            Navbar              */
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 100vh;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.toggle-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+}
+
+.toggle-button {
+  z-index: 100;
+  display: none;
+}
+
+.toggle-label {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:checked + .toggle-label {
+  background-color: #ffffff;
+  color: #000000; 
+}
+
+.panel {
+  position: fixed;
+  top: 20px;
+  right: -400px;
+  width: 300px;
+  height: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 50;
+}
+
+.panel.active {
+  right: 50px; 
+}
+
+
+.panel h3 {
+  margin-bottom: 20px;
+}
+
+.checkout {
+  margin-top: auto;
+}
+
+.checkout input[type="text"] {
+  width: 270px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.checkout button {
+  width: 293px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;  
+  border: none;
+  cursor: pointer;
+}
+
+.navbar {
+  font-family: 'valorant';
+  background-color: #000;
+  color: #fff;
+  font-size: 23px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+  width: 100%; 
+  max-height: 5vh;
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  z-index: 90;
+} 
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-logo {
+  font-family: 'valorant';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin-right: 30px;
+}
+
+.navbar-menu li:last-child {
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-menu li a:hover {
+  text-decoration: underline;
+}
+
+.navbar-logo h1 {
+  font-family: 'valorant';
+  background-color: #000000;
+  width: 35vh;
+  padding: 20px;
+  border-radius: 40px;
+  font-size: 50px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.navbar-logo span {
+  color: red;
+}
+
+/*            Home              */
+
+.Home {
+  position: relative;
+  background: white;
+  background-size:cover;
+  background-position: center;
+  padding-top: 492px;
+  width: 100%;
+  height: 120vh;
+  text-align: center;
+  align-items: center;
+}
+
+/*            About              */
+
+.About {
+  position: relative;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+}
+
+/*            Featured              */
+
+.Featured {
+  background: white;
+  position: relative;
+  height: 120vh;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
+.Feature_cards {
+  position: relative;
+}
+
+.Feature_card {
+  z-index: 1;
+  position: absolute;
+  width: 254px;
+  height: 190px;
+  border-radius: 10px;
+  transition: all .5s ease-out;
+  overflow: hidden;
+  transform: translateX(0px) translateY(0px) perspective(905px) rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
+}
+
+.Feature_card.one {
+  top: -120px;
+  left: -150px;
+  background: linear-gradient(180deg, #FF0055 0%, #000066 100%);
+}
+
+.Feature_card.two {
+  top: -95px;
+  left: -125px;
+  background: linear-gradient(180deg, #fa00ff 0%, #01f998 99%);
+}
+
+.Feature_card.three {
+  top: -70px;
+  left: -100px;
+  background: linear-gradient(180deg, #c0f901 0%, #fa00ff 100%);
+}
+
+.Feature_card:hover {
+  z-index: 4;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) !important;
+  transition: all .5s ease-out;
+}
+
+.Feature_cardDetails {
+  width: 55%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: rgba(0,0,0,0.8);
+  transition: .5s;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+}
+
+.Feature_card:hover .Feature_cardDetails {
+  transform: perspective(2000px) rotateY(0deg);
+}
+
+.Feature_cardDetailsHaeder {
+  font-weight: 600;
+  color: #edb899;
+}
+
+.Feature_cardDetailsButton {
+  padding: 3px 6px;
+  border-radius: 25px;
+  background-color: #edb899;
+  color: #000;
+  font-weight: 600;
+}
+
+/*            Products-Shop              */
+
+.Products {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  text-align: left;
+  width: 100%;
+}
+
+.container-products {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.product {
+  margin-left: 4px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(100% / 5 - 40px);
+  width: 100%;
+  max-width: 250px;
+}
+
+.product:hover {
+  border: 1px solid black;
+  background: linear-gradient(163deg, rgb(0, 0, 0) 0%, rgb(97, 0, 0) 70%);
+  color: white;
+  box-shadow: #000000;
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 0px 134px 5px rgba(166,166,166,1);
+  -moz-box-shadow: 0px 0px 134px 5px rgba(166,166,166,1);
+  box-shadow: 0px 0px 134px 5px rgba(166,166,166,1);
+}
+
+.product img {
+  max-width: 100%;
+  max-height: 160px;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  font-weight: bold;
+}
+
+
