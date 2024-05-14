@@ -113,9 +113,8 @@ checkoutButton.addEventListener('click', function() {
     });
 });
 
-const videos = ["assets/yt5s.io-Enter the Tigris __ VALORANT Lunar New Year 2022-(1080p).mp4", "assets/yt5s.io-Play with FORCE __ BlastX Skin Reveal Trailer - VALORANT-(1080p).mp4", 
-"assets/yt5s.io-GREATNESS __ Valiant Hero Skin Reveal Trailer - VALORANT-(1080p).mp4", "assets/yt5s.io-YOURE IN __ XER0FANG Skin Reveal Trailer - VALORANT-(1080p).mp4",
-"assets/yt5s.io-Weaponized Perfection __ Prime 2.0 Skin Reveal Trailer - VALORANT-(1080p).mp4", "assets/yt5s.io-Myst Bloom Bundle Trailer - VALORANT-(1080p).mp4"];
+const videos = ["assets/yt5s.io-Enter the Tigris __ VALORANT Lunar New Year 2022-(1080p).mp4", "assets/yt5s.io-Play with FORCE __ BlastX Skin Reveal Trailer - VALORANT-(1080p).mp4",
+"assets/yt5s.io-Weaponized Perfection __ Prime 2.0 Skin Reveal Trailer - VALORANT-(1080p).mp4"];
 const videoElement = document.getElementById("myVideo");
 let currentVideoIndex = 0;
 
