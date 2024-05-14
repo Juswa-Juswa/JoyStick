@@ -196,7 +196,7 @@ body {
 }
 
 .Feature_cards {
-  position: relative;
+  position: absolute;
   left: 30%;
 }
 
