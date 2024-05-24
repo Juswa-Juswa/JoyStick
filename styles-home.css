@@ -63,6 +63,7 @@ body {
   max-height: 5vh;
   position: fixed; 
   z-index: 90;
+  justify-content: center;
 } 
 
 .navbar a {
@@ -111,7 +112,7 @@ body {
   border-radius: 40px;
   font-size: 50px;
   text-align: center;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .navbar-logo span {
@@ -317,8 +318,8 @@ box-shadow: inset 0px 0px 300px 7px rgba(255,255,255,0.43);
 
 .Feature_cardDetailsButton:hover {
   -webkit-box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
--moz-box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
-box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
+  box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
 }
 
 .Featured_texts {
@@ -347,7 +348,7 @@ box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
 
 .Products {
   padding: 50px 0;
-  background-color: #f9f9f9;
+  background-color: #acacac;
   text-align: left;
   width: 100%;
   min-height: 100vh;
@@ -356,13 +357,13 @@ box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
 }
 
 .container-products {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(278px, 1fr));
   gap: 10px;
   justify-items: center;
 }
@@ -376,7 +377,8 @@ box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: calc(100% / 5 - 40px);
   width: 100%;
-  max-width: 250px;
+  max-width: 270px;
+  scale: 1.01;
   border: 2px solid transparent;
   transition: ease-in-out 0.3s;
   cursor: pointer;
@@ -419,11 +421,11 @@ box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
 }
 
 .product.selected {
-  border: 5px solid red;
+  border: 2px solid red;
   transition: 0.3s ease; 
-  -webkit-box-shadow: 10px 0px 124px -17px rgba(255,0,0,1);
-  -moz-box-shadow: 10px 0px 124px -17px rgba(255,0,0,1);
-  box-shadow: 10px 0px 124px -17px rgba(255,0,0,1);
+  -webkit-box-shadow: 8px 0px 124px -17px rgba(255,0,0,1);
+  -moz-box-shadow: 8px 0px 124px -17px rgba(255,0,0,1);
+  box-shadow: 8px 0px 124px -17px rgba(255,0,0,1);
 }
 
 .product.selected label{
@@ -446,7 +448,7 @@ box-shadow: inset 0px 0px 33px 7px rgba(255,255,255,1);
   color: #000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
-  overflow-y: auto;
+  overflow-y: auto hidden;
   padding: 10px;
   z-index: 99;
   transition: ease-in-out 1s;
